@@ -21,7 +21,21 @@
 html {
     min-height: 100%;
 }
- 
+<style type="text/css">
+.matrix { font-family:Lucida Console, Courier, Monotype; font-size:10pt; text-align:center; width:10px; padding:0px; margin:0px;}
+</style>
+
+<script type="text/javascript" language="JavaScript">
+
+<!--
+var rows=11; // must be an odd number
+var speed=50; // lower is faster
+var reveal=2; // between 0 and 2 only. The higher, the faster the word appears
+var effectalign="center" //enter "center" to center it.
+
+<script type="text/javascript" language="JavaScript">
+
+<!--
 body {
     background: -webkit-linear-gradient(#ff0000, #00FF00); /* from left to right */
     background: -o-linear-gradient(#ff0000, #00FF00); /* ending on the right */
@@ -34,13 +48,14 @@ body {
 </head>
 
 <body>
-    <form action="/html/tags/html_form_tag_action.cfm" method="post">
+  <form action="/html/tags/html_form_tag_action.cfm" method="post">
 <div>
-<textarea name="comments" id="comments" style="font-family:Times;font-size:1.2em;">
+<textarea name="comments" id="comments" style="font-family:font-family:Lucida Console, Courier, Monotype; font-size:10pt; text-align:center;">
 Hey... say something!
 </textarea>
 </div>
 <input type="submit" value="Submit">
 </form>
+<div id="matrix">Hi</div>
 </body>
 </html>
